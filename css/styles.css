@@ -1,0 +1,646 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400&family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+body {
+  color: #9ab3f5;
+background-color: #d0e8f2;
+margin: 0px;
+text-align: center;
+font-family: 'Merriweather', serif;
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 2s; /* Firefox < 16 */
+      -ms-animation: fadein 2s; /* Internet Explorer */
+       -o-animation: fadein 2s; /* Opera < 12.1 */
+          animation: fadein 2s;
+          overflow-x: hidden;
+
+}
+@keyframes fadein {
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+hr {
+  border: none;
+  border-top: none;
+   border-bottom: none;
+  height:0px;
+  width: 0%;
+  border-width: 6px;
+  border-color: #eaf6f6;
+  margin: 100px auto ;
+}
+/*Heading*/
+h2, h4, h3, h5, p{
+    font-family: 'Montserrat', sans-serif;
+
+}
+ h2{
+  color: #66bfbf;
+  padding-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+h3{
+  color: #aaaaaa;
+  font-size: 1.5rem;
+}
+h5{
+  color: #efecec;
+  font-size: 1.5rem;
+}
+p{
+  line-height: 2;
+}
+canvas{
+  position: absolute;
+left: 0;
+top: 0;
+}
+/*all ids of index css are in here*/
+#features{
+  padding: 100px;
+}
+#scrollpath{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+
+  background: linear-gradient(to top, #1687a7,#00ffe7);
+  animation: scrolly 5s linear infinite;
+}
+@keyframes scrolly {
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+  }
+}
+#progressbar:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1687a7,#00ffe7);
+  filter: blur(10px);
+}
+#progressbar:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #1687a7,#00ffe7);
+  filter: blur(30px);
+}
+#title2{
+  position: relative;
+   top: 40px;
+   font-size: 30px;
+   color: #66bfbf;
+   font-weight: normal;
+}
+/*all classes css index are here*/
+
+::-webkit-scrollbar{
+  width: 0;
+}
+.head{
+  position: relative;
+   top: 10px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.6rem;
+   color: #66bfbf;
+   line-height: 3.2rem;
+}
+.about-info{
+color: #a3d8f4;
+width: 90%;
+margin: auto;
+}
+.getintouch{
+  color: #9ab3f5;
+margin: 30px auto;
+}
+
+.style:before{
+  content: "";
+    z-index: -1;
+   position: fixed;
+    display: block;
+    background: url("../images/gamedevbg.png");
+    background-size:cover;
+  width: 100%;
+  height: 100%;
+
+    -webkit-filter: blur(5px);
+    filter: blur(5px)
+}
+.style {
+  overflow: auto;
+  position: relative;
+
+}
+
+
+.profile{
+  width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+.skillset{
+  font-size: 40px;
+  font-weight: 300;
+}
+.tech{
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.skill{
+  margin-left: 10px;
+  padding: 100px;
+
+}
+.skill p{
+  font-size: .9em;
+}
+.chart{
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  }
+.skill h4{
+  padding-top: 20px;
+}
+.chart .percent{
+  display: inline-block;
+line-height: 152px;
+font-size: 35px;
+font-family: 'Share Tech Mono', monospace;
+}
+.chart .percent:after{
+  content: "%";
+}
+.skills1{
+  position: relative;
+top: -100px;
+}
+.col1{
+  margin-bottom: 50px;
+}
+.projmade{
+
+  transition-property: all;
+    transition-duration: 0.27s;
+    transition-timing-function: ease-in-out;
+}
+
+.projmade:hover{
+  transform: scale(1.1,1.1);
+}
+.projtext{
+  text-decoration: none;
+  color: #e8e8e8;
+}
+.squareInner{
+  position: relative;
+  padding: 50px 35px 35px;
+  border: 2px solid #fe53bb;
+  border-top: none;
+}
+.squareInner::before,
+.squareInner::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30%;
+  border-bottom: 2px solid #fe53bb;
+}
+.squareInner::before{
+  right: 0;
+}
+.squareInner::after{
+  left: 0;
+}
+.squareItem{
+  margin-top: 130px;
+  position: relative;
+}
+.squareItem h3{
+  font-size: 56px;
+font-weight: 300;
+margin-bottom: 30px;
+
+}
+.squareItem h4{
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-size: 17px;
+
+}
+.squareIcon{
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  right: 55px;
+}
+.squareContent a{
+  text-decoration: none;
+  color: #e8e8e8;
+}
+@media (max-width: 990px) {
+  .skill{
+  padding: 0;
+  }
+  .squareIcon img{
+    width: 35px;
+    left: 45px;
+  }
+  .squareContent h4{
+    display: flex;
+    justify-content: center;
+  }
+  #title2{
+    font-size: 20px;
+  }
+}
+.btn1{
+  margin-top: 80px;
+  margin-bottom: -80px;
+  border-radius: 3px;
+  transition: background 0.5s, ease-in-out, border-radius 0.5s;
+}
+.btn1:hover{
+  border-radius: 20px;
+}
+
+.connect{
+  color: #66bfbf;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  font-weight: 300;
+}
+.contact-msg{
+  color: #a3d8f4;
+  width: 40%;
+  margin: 40px auto 60px;
+  line-height: 1.2rem;
+}
+.social-media{
+  margin: 40px auto 0 auto ;
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+.copyright{
+  color: #eaf6f6;
+  font-size: 0.75rem;
+  padding: 20px 0px;
+
+}
+.container-fluid{
+  padding: 3% 5%;
+}
+.network,
+.network1{
+
+  webkit-transition: width 2s, height 4s, ease-in-out;
+  transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+.network1:hover{
+  transform: scale(1.3,1.3);
+filter: invert(0.4) sepia(1) saturate(20) hue-rotate(334.8deg) brightness(1);
+}
+.network:hover{
+  transform: scale(1.3,1.3);
+filter: invert(0.4) sepia(1) saturate(20) hue-rotate(169.2deg) brightness(1);
+
+}
+.butn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  webkit-transition: background 0.5s, ease-in-out, border-radius 0.5s;
+    transition: background 0.5s, ease-in-out, border-radius 0.5s;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.butn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+}
+/*Nav-bar*/
+.brand1 span{
+  color: #05dfd7;
+}
+.navbar{
+  padding: 0 0 2.5rem;
+}
+.navbar-brand{
+font-family: 'Barlow Condensed', sans-serif;
+font-size: 2.5rem;
+font-weight: lighter;
+color: #66bfbf;
+}
+.nav-item{
+  padding: 0px 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: 'Montserrat-light', sans-serif;
+}
+
+
+
+
+
+/* style in gamedev page*/
+.bg:before{
+  content: "";
+    z-index: -2;
+   position: fixed;
+    display: block;
+    background: url("../images/gamedev1.jpg");
+    background-size:cover;
+  width: 100%;
+  height: 100%;
+
+    -webkit-filter: blur(5px);
+    filter: blur(5px)
+}
+.bg {
+  overflow: auto;
+  position: relative;
+}
+
+/* contact page */
+
+.contact-background:before{
+  content: "";
+    z-index: -1;
+   position: fixed;
+    display: block;
+    background-image: url("../images/space1.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+
+      -webkit-filter: blur(5px);
+      filter: blur(5px)
+ }
+ .contact-background{
+   overflow: auto;
+   position: relative;
+ }
+ .fluid1{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .glasseff{
+   background: white;
+   min-height: 50vh;
+   width: 60%;
+   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2) );
+   border-radius: 2rem;
+   backdrop-filter: blur(2rem);
+
+ }
+ .text-area{
+   word-break: break-all;
+}
+.form-control{
+  opacity: 0.5
+}
+
+ .contact-me{
+   margin: 40px auto 0 auto ;
+   background-color: #4d4c7d;
+   padding: 5px 0 20px;
+ }
+
+ /*ios page styles*/
+@media (max-width: 900px) {
+  #refuimg{margin-top: 10px; width: 100px}
+
+}
+@media (min-width: 901px) {
+  #refuimg{width:100px;}
+
+}
+ .iosimgs h6{
+   color: #a0c1b8;
+   line-height: 2.2rem;
+ }
+ .info{
+   text-align: left;
+ }
+.info h2{
+  color: #ffabe1;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.9rem;
+  padding-top: 20px;
+  padding-bottom:0px;
+}
+.info p{
+  color: #d6b0b1;
+   line-height: 1.2rem;
+}
+.workings ul{
+  color: #d6b0b1;
+   line-height: 2.2rem;
+
+}
+.getdocument{
+  text-align: right;
+}
+
+
+/*android.html style sheet*/
+
+.androidsec h1{
+  color: #ffabe1;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.silent_images img{
+  width: 200px;
+
+}
+
+.androidsec h2{
+  color: #ffabe1;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.9rem;
+  padding-top: 20px;
+  padding-bottom:0px;
+}
+@media (max-width: 900px){
+  #connect{float: left; width: 125px;}
+  #silent{margin-bottom: 20px; width: 125px;}
+
+}
+@media (min-width: 901px){
+  #connect{ width: 250px;}
+
+}
+.connect3{
+float: left;
+
+}
+.androidsec p{
+  color: #d6b0b1;
+   line-height: 1.2rem;
+
+}
+/*react-native.html styles here*/
+.header1{
+  color: #ffabe1;
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 5.2rem;
+  font-weight:bolder;
+}
+.container1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px 0;
+}
+.container1 .card1{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 .card1 .content{
+  position: absolute;
+  bottom: -160px;
+  width: 100%;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 10;
+  backdrop-filter: blur(15px);
+  box-shadow:  0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: bottom 0.5s;
+  transition-delay: 0.8s;
+}
+.container1 .card1:hover .content{
+  bottom: 0;
+  transition-delay: 0s;
+}
+.container1 .card1 .content .contentBx h3{
+
+  text-transform: uppercase;
+  list-style-type: 2px;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0 15px;
+  line-height: 1.1em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition-delay: 0.3s;
+}
+.container1 .card1:hover .content .contentBx h3{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.container1 .card1 .content .contentBx h3 span{
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: initial;
+}
+.container1 .card1 .content .contentBx h3 a{
+  text-decoration: none;
+    color: #fff;
+}
+.container1 .card1 .content .contentBx h3 a:hover{
+  text-decoration: none;
+    color: #f6dfeb;
+}
+/*super-car.html styles here*/
+@media (max-width: 900px) {
+  #super-car{margin-top: 10px; width: 100px}
+
+}
+@media (min-width: 901px) {
+  #super-car{width:100px;}
+
+}
+.reactimgs h6{
+  color: #a0c1b8;
+  line-height: 2.2rem;
+}
+.supercarinfo{
+  text-align: left;
+}
+.supercarinfo h2{
+ color: #ffabe1;
+ font-family: 'Barlow Condensed', sans-serif;
+ font-size: 1.9rem;
+ padding-top: 20px;
+ padding-bottom:0px;
+}
+.supercarinfo p{
+
+  line-height: 1.2rem;
+}

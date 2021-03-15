@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Developed Games</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="unity.ico">
+</head>
+<body>
+  <div class="bg">
+
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+<section class="container-fluid">
+  <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="index.html" style="color: #03c4a1;">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page" style="color: #709fb0;">Unity Projects</li>
+    </ol>
+  </nav>
+  <br>
+  <h3 style="text-align:center; color: #da9ff9; font-weight:bold">These are the Projects I made in Unity.<h3>
+    <br>
+    <br>
+
+  <div class="row">
+  <div class="col-lg-6 col-md-5 col-sm-6 ">
+
+      <img src="images/hexagon.jpeg" class="d-block w-100" alt="...">
+      <br>
+
+      <h5 style="color: #ffabe1; font-family: 'Montserrat Subrayada', sans-serif; line-height: 2.2rem; font-weight:bold;">Ultimate Hexagon</h5>
+          <p style="color: #709fb0;">  2D Arcade Game</p>
+
+    </div>
+    <div class="col-lg-6 col-md-5 col-sm-6 ">
+
+        <img src="images/dodgeblock.png" class="d-block w-100" alt="...">
+        <br>
+        <br>
+        <h5 style="color: #ffabe1; font-family: 'Montserrat Subrayada', sans-serif; line-height: 2.2rem; font-weight:bold;">Dodge the Blockszz</h5>
+            <p style="color: #709fb0;"> A Casual Indie Game</p>
+      </div>
+      <div class="col-lg-6 col-md-5 col-sm-6 ">
+
+          <img src="images/dropit.png" class="d-block w-100" alt="..." >
+          <br>
+          <h5 style="color: #ffabe1; font-family: 'Montserrat Subrayada', sans-serif; line-height: 2.2rem; font-weight:bold;">Drop It</h5>
+              <p style="color: #709fb0;">Super Casual Arcade-3D-Game</p>
+
+        </div>
+        <div class="col-lg-6 col-md-5 col-sm-6 ">
+                <img src="images/Alpha-count.png" class="d-block w-100" alt="...">
+                <br>
+                <h5 style="color: #ffabe1; font-family: 'Montserrat Subrayada', sans-serif; line-height: 2.2rem; font-weight:bold;">Count the Alphabet</h5>
+                    <p style="color: #709fb0;">Casual Kids Game</p>
+              </div>
+
+
+      </div>
+    <hr>
+      <p style="text-align:center; color: #da9ff9;">To know more you can <a href="contacts.html" style="color: #03c4a1; text-decoration:none;"> Contact Me.</p>
+
+
+
+      </section>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+    let progress = document.getElementById('progressbar');
+    let totHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+      let progressHeight = (window.pageYOffset / totHeight) * 100;
+      progress.style.height = progressHeight + "%";
+    }
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

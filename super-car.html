@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Supercar</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="reactimg/supericon.ico">
+
+
+</head>
+<body class="bg" id="Supercar">
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+  <section class="container-fluid">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html" style="color: #03c4a1;">Home</a></li>
+        <li class="breadcrumb-item"><a href="react-native.html" style="color: #03c4a1;">React-Native Projects</a></li>
+        <li class="breadcrumb-item active" aria-current="page" style="color: #709fb0;">Supercar</li>
+      </ol>
+    </nav>
+    <img src="reactimg/super-car.png" alt="super-car" style="opacity:0.7; " id="super-car">
+<h1 style="color: #ffabe1; font-family: 'Barlow Condensed', sans-serif; line-height: 5.2rem; font-weight:bolder">Super-Cars</h1>
+<h2 style="color: #ffabe1; font-family: 'Barlow Condensed', sans-serif;">The One's you wish to Buy!</h2>
+
+<br>
+
+<div class="row reactimgs">
+  <div class="col-lg-4 col-md-6 " >
+  <img src="reactimg/supercarapploading.png" alt="Loading" >
+  <h6 style="">Loading</h6>
+  </div>
+  <div class="col-lg-4 col-md-6 " >
+  <img src="reactimg/supercarappimg1.png" alt="Home">
+  <h6 style="">Home</h6>
+  </div>
+  <div class="col-lg-4" >
+  <img src="reactimg/supercarappimg2.png" alt="Modal view" >
+  <h6 style="">Modal View</h6>
+  </div>
+  </div>
+  <br>
+
+  <br>
+  <div class="supercarinfo">
+    <div class="aim">
+  <h2 style="">About</h2>
+  <p style="" >This Application is a Web app based on a Website that I made, Which gives all the information regarding exotic Supercars that are currently popular and trending.</p>
+</div>
+</div>
+
+</section>
+
+
+<script>let progress = document.getElementById('progressbar');
+let totHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

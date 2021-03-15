@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Android Developer</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="androidfavicon.ico">
+</head>
+<body>
+<div class="bg androidsec" >
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+<section class="container-fluid " >
+<nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="index.html" style="color: #03c4a1;">Home</a></li>
+  <li class="breadcrumb-item active" aria-current="page" style="color: #709fb0;">Android Projects</li>
+</ol>
+</nav >
+<h1>Android Projects</h1>
+<br>
+<br>
+<div class="row">
+  <div class="col-lg-12 col-md-5 col-sm-4">
+    <h2 class=" ">Connect 3</h2>
+    <img src="androidimages/connect3.png" alt="Connect3" class="connect3" id="connect">
+    <br>
+    <br>
+    <p>As the name suggest Connect 3 counter of the same color and you win!</p>
+    <br><br>
+  </div>
+  </div>
+  <div class="row">
+    <h2>Silent Mode Toggle</h2>
+    <div class="col-lg-6 col-md-6 col-sm-4 silent_images" >
+      <img src="androidimages/silentmodeoff.png" alt="volume_off" id="silent">
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-4 silent_images">
+      <img src="androidimages/silenmodeon.png" alt="volume_on"  id="silent">
+    </div>
+
+  </div>
+  <br>
+  <p>I made this is An App as well as a Widget, Toggles Silent mode in your phone
+  but does not mute your media volume.</p>
+  <br><br>
+
+
+
+</section >
+</div >
+
+
+
+<script type="text/javascript">
+let progress = document.getElementById('progressbar');
+let totHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+  let progressHeight = (window.pageYOffset / totHeight) * 100;
+  progress.style.height = progressHeight + "%";
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
