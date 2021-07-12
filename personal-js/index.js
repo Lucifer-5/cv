@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 
   var typed = new Typed("#title2",{
-    strings: [,"<mark>Computer Engineer.</mark>", "<mark>Student.</mark>", "<mark>Game Developer.</mark>", "<mark>Android Developer.</mark>"],
+    strings: [,"<mark>Computer Engineer.</mark>", "<mark>Game Developer.</mark>", "<mark>Android Developer.</mark>"],
     smartBackspace:true,
     typeSpeed: 50,
     loop:true,
